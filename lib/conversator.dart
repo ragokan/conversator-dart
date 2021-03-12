@@ -3,7 +3,7 @@ library conversator;
 import 'types/actions.dart';
 import 'types/listener.dart';
 
-class _Conversation {
+class Conversation {
   final _listeners = <Listener>{};
 
   void speak<T>(String event, T message) {
@@ -20,4 +20,4 @@ class _Conversation {
   }
 }
 
-var conversation = _Conversation();
+var conversation = Conversation();
