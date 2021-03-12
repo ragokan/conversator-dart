@@ -4,10 +4,10 @@ import 'types/actions.dart';
 import 'types/listener.dart';
 
 class _Conversation {
-  final listeners = <Listener>{};
+  final _listeners = <Listener>{};
 
   void speak<T>(String event, T message) {
-    listeners.forEach((listener) => {
+    _listeners.forEach((listener) => {
           if ((listener.event).toLowerCase() == event.toLowerCase() ||
               'on$event'.toLowerCase() == listener.event.toLowerCase())
             {listener.callback(message)}
@@ -16,7 +16,7 @@ class _Conversation {
 
   void listen<T>(String event, voidCallback<T> callback) {
     var listener = Listener(event, callback);
-    listeners.add(listener);
+    _listeners.add(listener);
   }
 }
 

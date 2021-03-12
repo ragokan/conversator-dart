@@ -1,6 +1,6 @@
 name: conversator
 description: With the conversator, you can send data/message across files. It works like web socket but it runs locally.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/ragokan/conversator-dart
 repository: https://github.com/ragokan/conversator-dart
 
@@ -12,3 +12,4 @@ environment:
 
 dev_dependencies:
   pedantic: ^1.9.0
+  test: ^1.16.7
