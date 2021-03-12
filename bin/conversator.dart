@@ -1,3 +1,5 @@
+library conversator;
+
 import 'types/actions.dart';
 import 'types/listener.dart';
 
