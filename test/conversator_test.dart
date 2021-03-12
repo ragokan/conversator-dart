@@ -3,7 +3,7 @@ import 'package:conversator/conversator.dart';
 
 void main() {
   test('First Conversation', () {
-    conversation.listen('message1', (payload) {
+    conversation.listen('message1', (dynamic payload) {
       expect(payload, equals('First Message'));
     });
 
@@ -11,11 +11,11 @@ void main() {
   });
 
   test("Conversation With 'on'", () {
-    conversation.listen('onMessage2', (payload) {
+    conversation.listen('onMessage2', (dynamic payload) {
       expect(payload, equals('Second Message'));
     });
 
-    conversation.listen('message2', (payload) {
+    conversation.listen('message2', (dynamic payload) {
       expect(payload, equals('Second Message'));
     });
 

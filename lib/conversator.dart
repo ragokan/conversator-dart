@@ -15,7 +15,7 @@ class _Conversation {
   }
 
   void listen<T>(String event, voidCallback<T> callback) {
-    var listener = Listener(event, callback);
+    var listener = Listener(event, callback as void Function(dynamic));
     _listeners.add(listener);
   }
 }
