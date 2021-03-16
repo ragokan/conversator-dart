@@ -21,3 +21,10 @@
 ## 1.0.5
 
 - Adjust package to the null safety and give strict types.
+
+## 1.0.6
+
+- Set the public variable names to 'conversator' and 'Conversator'
+- Provide more examples for the library.
+- Upgrade the conversator with analysis and linting.
+- Add documentary comments.
