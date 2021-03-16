@@ -28,3 +28,7 @@
 - Provide more examples for the library.
 - Upgrade the conversator with analysis and linting.
 - Add documentary comments.
+
+## 1.0.7
+
+- Lint errors are fixed.
